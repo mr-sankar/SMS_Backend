@@ -92,7 +92,9 @@ const storage = multer.diskStorage({
     );
   },
 });
-
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
 // File filter function
 const fileFilter = (req, file, cb) => {
   // Updated regex to include pdf
