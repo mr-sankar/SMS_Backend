@@ -82,7 +82,7 @@ const Parent = require('../models/parentModel'); // Assuming you have a Parent m
 const authMiddleware = require('../middleware/auth');
 const Attendance = require('../models/Attendance');
 const Teacher = require('../models/teacherModel');
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcryptjs");
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 // Middleware to restrict to Admin or Principal
